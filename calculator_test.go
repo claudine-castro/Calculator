@@ -7,6 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
+// Tests calculating the area of a circle given its radius.
 func TestCalculateCircleArea(t *testing.T) {
 	err := errors.New("radius value cannot be negative or zero")
 
@@ -32,6 +33,7 @@ func TestCalculateCircleArea(t *testing.T) {
 	}
 }
 
+// Tests calculating the volume of a cylinder given its radius and height.
 func TestCalculateCylinderVolume(t *testing.T) {
 	err := errors.New("radius or height value cannot be negative or zero")
 
@@ -62,6 +64,8 @@ func TestCalculateCylinderVolume(t *testing.T) {
 	}
 }
 
+// Tests a function that receives a Person(name, city) struct which checks if the name starts with A
+// returns a boolean value
 func TestGetNameThatStartsWithA(t *testing.T) {
 
 	tests := []struct {
@@ -89,6 +93,8 @@ func TestGetNameThatStartsWithA(t *testing.T) {
 	}
 }
 
+// Tests a function that receives a slice of Person and city string, and filters Person by name if city is matched
+// returns slice of persons' name
 func TestGetNamesByCity(t *testing.T) {
 	err := errors.New("no matching city found")
 
